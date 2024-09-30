@@ -1,0 +1,1 @@
+global_war = 0

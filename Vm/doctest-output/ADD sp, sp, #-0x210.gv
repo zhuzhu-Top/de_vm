@@ -1,0 +1,214 @@
+// The Round Table
+digraph "ADD sp, sp, #-0x210" {
+	"6
+operation=LLIL_SUB
+llil=x19#1 - 0x138
+" -> "7
+stop_reg=x19
+"
+	"6
+operation=LLIL_SUB
+llil=x19#1 - 0x138
+" -> "8
+value=312
+"
+	"5
+llil=x21#1 = x19#1 - 0x138
+" -> "6
+operation=LLIL_SUB
+llil=x19#1 - 0x138
+"
+	"4
+llil=x21#1
+" -> "5
+llil=x21#1 = x19#1 - 0x138
+"
+	"3
+operation=LLIL_ADD
+llil=x21#1 + 8
+" -> "4
+llil=x21#1
+"
+	"3
+operation=LLIL_ADD
+llil=x21#1 + 8
+" -> "9
+value=8
+"
+	"2
+llil=x11#42 = x21#1 + 8
+" -> "3
+operation=LLIL_ADD
+llil=x21#1 + 8
+"
+	"1
+llil=x11#42
+" -> "2
+llil=x11#42 = x21#1 + 8
+"
+	"0
+operation=LLIL_ADD
+llil=x11#42 + (zx.q(x8#11.w8) << 3)
+" -> "1
+llil=x11#42
+"
+	"11
+ext=LLIL_ZX
+llil=zx.q(x8#11.w8)
+" -> "12
+reg=w8
+"
+	"10
+operation=LLIL_LSL
+llil=zx.q(x8#11.w8) << 3
+" -> "11
+ext=LLIL_ZX
+llil=zx.q(x8#11.w8)
+"
+	"10
+operation=LLIL_LSL
+llil=zx.q(x8#11.w8) << 3
+" -> "13
+value=3
+"
+	"0
+operation=LLIL_ADD
+llil=x11#42 + (zx.q(x8#11.w8) << 3)
+" -> "10
+operation=LLIL_LSL
+llil=zx.q(x8#11.w8) << 3
+"
+	"ADD sp, sp, #-0x210" -> "0
+operation=LLIL_ADD
+llil=x11#42 + (zx.q(x8#11.w8) << 3)
+"
+	"26
+operation=LLIL_SUB
+llil=x19#1 - 0x138
+" -> "27
+stop_reg=x19
+"
+	"26
+operation=LLIL_SUB
+llil=x19#1 - 0x138
+" -> "28
+value=312
+"
+	"25
+llil=x21#1 = x19#1 - 0x138
+" -> "26
+operation=LLIL_SUB
+llil=x19#1 - 0x138
+"
+	"24
+llil=x21#1
+" -> "25
+llil=x21#1 = x19#1 - 0x138
+"
+	"23
+operation=LLIL_ADD
+llil=x21#1 + 8
+" -> "24
+llil=x21#1
+"
+	"23
+operation=LLIL_ADD
+llil=x21#1 + 8
+" -> "29
+value=8
+"
+	"22
+llil=x11#42 = x21#1 + 8
+" -> "23
+operation=LLIL_ADD
+llil=x21#1 + 8
+"
+	"21
+llil=x11#42
+" -> "22
+llil=x11#42 = x21#1 + 8
+"
+	"20
+operation=LLIL_ADD
+llil=x11#42 + (zx.q(x9#6.w9) << 3)
+" -> "21
+llil=x11#42
+"
+	"31
+ext=LLIL_ZX
+llil=zx.q(x9#6.w9)
+" -> "32
+reg=w9
+"
+	"30
+operation=LLIL_LSL
+llil=zx.q(x9#6.w9) << 3
+" -> "31
+ext=LLIL_ZX
+llil=zx.q(x9#6.w9)
+"
+	"30
+operation=LLIL_LSL
+llil=zx.q(x9#6.w9) << 3
+" -> "33
+value=3
+"
+	"20
+operation=LLIL_ADD
+llil=x11#42 + (zx.q(x9#6.w9) << 3)
+" -> "30
+operation=LLIL_LSL
+llil=zx.q(x9#6.w9) << 3
+"
+	"19
+operation=LLIL_LOAD_SSA
+llil=[x11#42 + (zx.q(x9#6.w9) << 3)].q @ mem#26
+" -> "20
+operation=LLIL_ADD
+llil=x11#42 + (zx.q(x9#6.w9) << 3)
+"
+	"18
+llil=x9#61 = [x11#42 + (zx.q(x9#6.w9) << 3)].q @ mem#26
+" -> "19
+operation=LLIL_LOAD_SSA
+llil=[x11#42 + (zx.q(x9#6.w9) << 3)].q @ mem#26
+"
+	"17
+llil=x9#61
+" -> "18
+llil=x9#61 = [x11#42 + (zx.q(x9#6.w9) << 3)].q @ mem#26
+"
+	"16
+operation=LLIL_ADD
+llil=x9#61 + sx.q((x10#52.w10).w)
+" -> "17
+llil=x9#61
+"
+	"34
+ext=LLIL_SX
+llil=sx.q((x10#52.w10).w)
+" -> "35
+reg=w10
+"
+	"16
+operation=LLIL_ADD
+llil=x9#61 + sx.q((x10#52.w10).w)
+" -> "34
+ext=LLIL_SX
+llil=sx.q((x10#52.w10).w)
+"
+	"15
+llil=x9#62 = x9#61 + sx.q((x10#52.w10).w)
+" -> "16
+operation=LLIL_ADD
+llil=x9#61 + sx.q((x10#52.w10).w)
+"
+	"14
+llil=x9#62
+" -> "15
+llil=x9#62 = x9#61 + sx.q((x10#52.w10).w)
+"
+	"ADD sp, sp, #-0x210" -> "14
+llil=x9#62
+"
+}

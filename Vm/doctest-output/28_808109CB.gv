@@ -1,0 +1,579 @@
+// The Round Table
+digraph "28_808109CB" {
+	"7
+2C48 
+operation -> LLIL_SUB
+llil -> x19#1 - 0x138
+" -> "8
+stop_reg -> x19
+"
+	"7
+2C48 
+operation -> LLIL_SUB
+llil -> x19#1 - 0x138
+" -> "9
+value -> 312
+"
+	"6
+2C48 
+llil -> x21#1 = x19#1 - 0x138
+" -> "7
+2C48 
+operation -> LLIL_SUB
+llil -> x19#1 - 0x138
+"
+	"5
+3F18 
+reg -> x21
+llil -> x21#1
+" -> "6
+2C48 
+llil -> x21#1 = x19#1 - 0x138
+"
+	"4
+3F18 
+operation -> LLIL_ADD
+llil -> x21#1 + 8
+" -> "5
+3F18 
+reg -> x21
+llil -> x21#1
+"
+	"4
+3F18 
+operation -> LLIL_ADD
+llil -> x21#1 + 8
+" -> "10
+value -> 8
+"
+	"3
+3F18 
+llil -> x11#90 = x21#1 + 8
+" -> "4
+3F18 
+operation -> LLIL_ADD
+llil -> x21#1 + 8
+"
+	"2
+3F28 
+reg -> x11
+llil -> x11#90
+" -> "3
+3F18 
+llil -> x11#90 = x21#1 + 8
+"
+	"1
+3F28 
+operation -> LLIL_ADD
+llil -> x11#90 + (zx.q(x10#7.w10) << 3)
+" -> "2
+3F28 
+reg -> x11
+llil -> x11#90
+"
+	"31
+2CE0 
+operation -> LLIL_LSR
+llil -> x12#3.w12 u>> 0xb
+" -> "32
+stop_reg -> x12
+"
+	"31
+2CE0 
+operation -> LLIL_LSR
+llil -> x12#3.w12 u>> 0xb
+" -> "33
+value -> 11
+"
+	"30
+ext -> LLIL_ZX
+2CE0 
+llil -> zx.q(x12#3.w12 u>> 0xb)
+" -> "31
+2CE0 
+operation -> LLIL_LSR
+llil -> x12#3.w12 u>> 0xb
+"
+	"29
+2CE4 
+reg -> w11
+llil -> x11#5.w11
+" -> "30
+ext -> LLIL_ZX
+2CE0 
+llil -> zx.q(x12#3.w12 u>> 0xb)
+"
+	"28
+2CE4 
+operation -> LLIL_AND
+llil -> x11#5.w11 & 2
+" -> "29
+2CE4 
+reg -> w11
+llil -> x11#5.w11
+"
+	"28
+2CE4 
+operation -> LLIL_AND
+llil -> x11#5.w11 & 2
+" -> "34
+value -> 2
+"
+	"27
+ext -> LLIL_ZX
+2CE4 
+llil -> zx.q(x11#5.w11 & 2)
+" -> "28
+2CE4 
+operation -> LLIL_AND
+llil -> x11#5.w11 & 2
+"
+	"26
+2CF4 
+reg -> w14
+llil -> x14#5.w14
+" -> "27
+ext -> LLIL_ZX
+2CE4 
+llil -> zx.q(x11#5.w11 & 2)
+"
+	"25
+2CF4 
+operation -> LLIL_AND
+llil -> x14#5.w14 & 0xfffffffe
+" -> "26
+2CF4 
+reg -> w14
+llil -> x14#5.w14
+"
+	"25
+2CF4 
+operation -> LLIL_AND
+llil -> x14#5.w14 & 0xfffffffe
+" -> "35
+value -> -2
+"
+	"24
+2CF4 
+operation -> LLIL_OR
+llil -> (x14#5.w14 & 0xfffffffe) | (x12#3.w12 & 0x80000000) u>> 0x1f
+" -> "25
+2CF4 
+operation -> LLIL_AND
+llil -> x14#5.w14 & 0xfffffffe
+"
+	"37
+2CF4 
+operation -> LLIL_AND
+llil -> x12#3.w12 & 0x80000000
+" -> "38
+stop_reg -> x12
+"
+	"37
+2CF4 
+operation -> LLIL_AND
+llil -> x12#3.w12 & 0x80000000
+" -> "39
+value -> 2147483648
+"
+	"36
+2CF4 
+operation -> LLIL_LSR
+llil -> (x12#3.w12 & 0x80000000) u>> 0x1f
+" -> "37
+2CF4 
+operation -> LLIL_AND
+llil -> x12#3.w12 & 0x80000000
+"
+	"36
+2CF4 
+operation -> LLIL_LSR
+llil -> (x12#3.w12 & 0x80000000) u>> 0x1f
+" -> "40
+value -> 31
+"
+	"24
+2CF4 
+operation -> LLIL_OR
+llil -> (x14#5.w14 & 0xfffffffe) | (x12#3.w12 & 0x80000000) u>> 0x1f
+" -> "36
+2CF4 
+operation -> LLIL_LSR
+llil -> (x12#3.w12 & 0x80000000) u>> 0x1f
+"
+	"23
+ext -> LLIL_ZX
+2CF4 
+llil -> zx.q((x14#5.w14 & 0xfffffffe) | (x12#3.w12 & 0x80000000) u>> 0x1f)
+" -> "24
+2CF4 
+operation -> LLIL_OR
+llil -> (x14#5.w14 & 0xfffffffe) | (x12#3.w12 & 0x80000000) u>> 0x1f
+"
+	"22
+2CF8 
+reg -> w14
+llil -> x14#6.w14
+" -> "23
+ext -> LLIL_ZX
+2CF4 
+llil -> zx.q((x14#5.w14 & 0xfffffffe) | (x12#3.w12 & 0x80000000) u>> 0x1f)
+"
+	"21
+2CF8 
+operation -> LLIL_OR
+llil -> x14#6.w14 | x2#5.w2
+" -> "22
+2CF8 
+reg -> w14
+llil -> x14#6.w14
+"
+	"46
+2CE0 
+operation -> LLIL_LSR
+llil -> x12#3.w12 u>> 0xb
+" -> "47
+stop_reg -> x12
+"
+	"46
+2CE0 
+operation -> LLIL_LSR
+llil -> x12#3.w12 u>> 0xb
+" -> "48
+value -> 11
+"
+	"45
+ext -> LLIL_ZX
+2CE0 
+llil -> zx.q(x12#3.w12 u>> 0xb)
+" -> "46
+2CE0 
+operation -> LLIL_LSR
+llil -> x12#3.w12 u>> 0xb
+"
+	"44
+2CF0 
+reg -> w11
+llil -> x11#5.w11
+" -> "45
+ext -> LLIL_ZX
+2CE0 
+llil -> zx.q(x12#3.w12 u>> 0xb)
+"
+	"43
+2CF0 
+operation -> LLIL_AND
+llil -> x11#5.w11 & 4
+" -> "44
+2CF0 
+reg -> w11
+llil -> x11#5.w11
+"
+	"43
+2CF0 
+operation -> LLIL_AND
+llil -> x11#5.w11 & 4
+" -> "49
+value -> 4
+"
+	"42
+ext -> LLIL_ZX
+2CF0 
+llil -> zx.q(x11#5.w11 & 4)
+" -> "43
+2CF0 
+operation -> LLIL_AND
+llil -> x11#5.w11 & 4
+"
+	"41
+2CF8 
+reg -> w2
+llil -> x2#5.w2
+" -> "42
+ext -> LLIL_ZX
+2CF0 
+llil -> zx.q(x11#5.w11 & 4)
+"
+	"21
+2CF8 
+operation -> LLIL_OR
+llil -> x14#6.w14 | x2#5.w2
+" -> "41
+2CF8 
+reg -> w2
+llil -> x2#5.w2
+"
+	"20
+ext -> LLIL_ZX
+2CF8 
+llil -> zx.q(x14#6.w14 | x2#5.w2)
+" -> "21
+2CF8 
+operation -> LLIL_OR
+llil -> x14#6.w14 | x2#5.w2
+"
+	"19
+2D0C 
+reg -> w14
+llil -> x14#7.w14
+" -> "20
+ext -> LLIL_ZX
+2CF8 
+llil -> zx.q(x14#6.w14 | x2#5.w2)
+"
+	"18
+2D0C 
+operation -> LLIL_OR
+llil -> x14#7.w14 | x2#6.w2
+" -> "19
+2D0C 
+reg -> w14
+llil -> x14#7.w14
+"
+	"55
+2CE0 
+operation -> LLIL_LSR
+llil -> x12#3.w12 u>> 0xb
+" -> "56
+stop_reg -> x12
+"
+	"55
+2CE0 
+operation -> LLIL_LSR
+llil -> x12#3.w12 u>> 0xb
+" -> "57
+value -> 11
+"
+	"54
+ext -> LLIL_ZX
+2CE0 
+llil -> zx.q(x12#3.w12 u>> 0xb)
+" -> "55
+2CE0 
+operation -> LLIL_LSR
+llil -> x12#3.w12 u>> 0xb
+"
+	"53
+2CFC 
+reg -> w11
+llil -> x11#5.w11
+" -> "54
+ext -> LLIL_ZX
+2CE0 
+llil -> zx.q(x12#3.w12 u>> 0xb)
+"
+	"52
+2CFC 
+operation -> LLIL_AND
+llil -> x11#5.w11 & 8
+" -> "53
+2CFC 
+reg -> w11
+llil -> x11#5.w11
+"
+	"52
+2CFC 
+operation -> LLIL_AND
+llil -> x11#5.w11 & 8
+" -> "58
+value -> 8
+"
+	"51
+ext -> LLIL_ZX
+2CFC 
+llil -> zx.q(x11#5.w11 & 8)
+" -> "52
+2CFC 
+operation -> LLIL_AND
+llil -> x11#5.w11 & 8
+"
+	"50
+2D0C 
+reg -> w2
+llil -> x2#6.w2
+" -> "51
+ext -> LLIL_ZX
+2CFC 
+llil -> zx.q(x11#5.w11 & 8)
+"
+	"18
+2D0C 
+operation -> LLIL_OR
+llil -> x14#7.w14 | x2#6.w2
+" -> "50
+2D0C 
+reg -> w2
+llil -> x2#6.w2
+"
+	"17
+ext -> LLIL_ZX
+2D0C 
+llil -> zx.q(x14#7.w14 | x2#6.w2)
+" -> "18
+2D0C 
+operation -> LLIL_OR
+llil -> x14#7.w14 | x2#6.w2
+"
+	"16
+2D18 
+reg -> w2
+llil -> x2#7.w2
+" -> "17
+ext -> LLIL_ZX
+2D0C 
+llil -> zx.q(x14#7.w14 | x2#6.w2)
+"
+	"15
+2D18 
+operation -> LLIL_OR
+llil -> x2#7.w2 | x10#6.w10
+" -> "16
+2D18 
+reg -> w2
+llil -> x2#7.w2
+"
+	"64
+2CE0 
+operation -> LLIL_LSR
+llil -> x12#3.w12 u>> 0xb
+" -> "65
+stop_reg -> x12
+"
+	"64
+2CE0 
+operation -> LLIL_LSR
+llil -> x12#3.w12 u>> 0xb
+" -> "66
+value -> 11
+"
+	"63
+ext -> LLIL_ZX
+2CE0 
+llil -> zx.q(x12#3.w12 u>> 0xb)
+" -> "64
+2CE0 
+operation -> LLIL_LSR
+llil -> x12#3.w12 u>> 0xb
+"
+	"62
+2D00 
+reg -> w11
+llil -> x11#5.w11
+" -> "63
+ext -> LLIL_ZX
+2CE0 
+llil -> zx.q(x12#3.w12 u>> 0xb)
+"
+	"61
+2D00 
+operation -> LLIL_AND
+llil -> x11#5.w11 & 0x10
+" -> "62
+2D00 
+reg -> w11
+llil -> x11#5.w11
+"
+	"61
+2D00 
+operation -> LLIL_AND
+llil -> x11#5.w11 & 0x10
+" -> "67
+value -> 16
+"
+	"60
+ext -> LLIL_ZX
+2D00 
+llil -> zx.q(x11#5.w11 & 0x10)
+" -> "61
+2D00 
+operation -> LLIL_AND
+llil -> x11#5.w11 & 0x10
+"
+	"59
+2D18 
+reg -> w10
+llil -> x10#6.w10
+" -> "60
+ext -> LLIL_ZX
+2D00 
+llil -> zx.q(x11#5.w11 & 0x10)
+"
+	"15
+2D18 
+operation -> LLIL_OR
+llil -> x2#7.w2 | x10#6.w10
+" -> "59
+2D18 
+reg -> w10
+llil -> x10#6.w10
+"
+	"14
+ext -> LLIL_ZX
+2D18 
+llil -> zx.q(x2#7.w2 | x10#6.w10)
+" -> "15
+2D18 
+operation -> LLIL_OR
+llil -> x2#7.w2 | x10#6.w10
+"
+	"13
+3F28 
+reg -> w10
+llil -> x10#7.w10
+" -> "14
+ext -> LLIL_ZX
+2D18 
+llil -> zx.q(x2#7.w2 | x10#6.w10)
+"
+	"12
+ext -> LLIL_ZX
+3F28 
+llil -> zx.q(x10#7.w10)
+" -> "13
+3F28 
+reg -> w10
+llil -> x10#7.w10
+"
+	"11
+3F28 
+operation -> LLIL_LSL
+llil -> zx.q(x10#7.w10) << 3
+" -> "12
+ext -> LLIL_ZX
+3F28 
+llil -> zx.q(x10#7.w10)
+"
+	"11
+3F28 
+operation -> LLIL_LSL
+llil -> zx.q(x10#7.w10) << 3
+" -> "68
+value -> 3
+"
+	"1
+3F28 
+operation -> LLIL_ADD
+llil -> x11#90 + (zx.q(x10#7.w10) << 3)
+" -> "11
+3F28 
+operation -> LLIL_LSL
+llil -> zx.q(x10#7.w10) << 3
+"
+	"0
+3F30 
+reg -> x8
+llil -> x8#179
+" -> "1
+3F28 
+operation -> LLIL_ADD
+llil -> x11#90 + (zx.q(x10#7.w10) << 3)
+"
+	"28_808109CB" -> "0
+3F30 
+reg -> x8
+llil -> x8#179
+"
+	"28_808109CB" -> "69
+value -> 0
+"
+}
